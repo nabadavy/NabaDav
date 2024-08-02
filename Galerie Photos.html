@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie des Photos</title>
+    <link rel="stylesheet" href="Galerie.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .banner-image {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .gallery-container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-section {
+            margin-bottom: 20px;
+        }
+        .gallery-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #0056b3;
+        }
+        .photo_ville, .photo_met, .photo_art {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .photo_ville img, .photo_met img, .photo_art img {
+            width: 32%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .sitemap-container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(5, 3, 16);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sitemap-item {
+            margin-bottom: 10px;
+        }
+        .sitemap-item h3 {
+            margin: 0;
+        }
+        .sitemap-item a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .sitemap-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+
+        <img src="logo.jpg" alt="Image" class="banner-image">
+        <h1>Galerie des Photos</h1>
+    </header>
+    <div class="gallery-container">
+        <section class="gallery-section">
+            <h2 id="ville">L'Ouverture Et Quelques autorités présents</h2>
+            <div class="photo_ville">
+                <img src="Z.jpg" alt="Ouverture 1">
+                <img src="Y.jpg" alt="Ouverture 2">
+                <img src="X.jpg" alt="Ouverture 3">
+            </div>
+            <div class="photo_ville">
+                <img src="fond.jpg" alt="Ouverture 4">
+                <img src="T (2).jpg" alt="Ouverture 5">
+                <img src="AA.jpg" alt="Ouverture 6">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 id="gastro">Quelques Prestations Et Récompenses</h2>
+            <div class="photo_met">
+                <img src="cc.jpg" alt="Prestation 1">
+                <img src="dd.jpg" alt="Prestation 2">
+                <img src="oo.jpg" alt="Prestation 3">
+            </div>
+            <div class="photo_met">
+                <img src="ii.jpg" alt="Prestation 4">
+                <img src="nn.jpg" alt="Prestation 5">
+                <img src="ee.jpg" alt="Prestation 6">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 id="art">Quelques faits</h2>
+            <div class="photo_art">
+                <img src="pp.jpg" alt="Fait 1">
+                <img src="mm.jpg" alt="Fait 2">
+                <img src="S.jpg" alt="Fait 3">
+            </div>
+        </section>
+   
+        <div class="sitemap-container">
+            <div class="sitemap-item">
+                <h3><a href="index.html">Accueil</a></h3>
+                <h3><a href="Historique.html">Historique</a></h3>
+                <h3><a href="Contacter.html">Contacter-NOUS</a></h3>
+            </div>
+            <div class="sitemap-item">
+                <h3><a href="Billeterie.html">Billetterie</a></h3>
+                <h3><a href="Assistance.html">Assistance</a></h3>
+                <h3><a href="Partenaires et Sponsors.html">Partenaires et Sponsors</a></h3>
+                <h3><a href="Reservation.html">Réservation d'Hôtel</a></h3>
+            </div>
+        </div>
+            </html>

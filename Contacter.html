@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacter-nous</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b6953; 
+        }
+        header {
+            background-color: #10589f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header .banner-image {
+            width: 100%;
+            max-width: 800px; 
+            height: auto;
+            margin: 0 auto; 
+            margin: 0;
+            padding-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white; 
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: #ffd700; 
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background-color: rgb(102, 41, 41);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #886b6b;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+        .sitemap-container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(13, 9, 9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sitemap-item {
+            margin-bottom: 20px;
+        }
+        .sitemap-item a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .sitemap-item a:hover {
+            color: #ffd700; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Image" class="banner-image">
+        <h1>Contacter-NOUS</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>NOUS aimerions avoir de vos nouvelles</h2>
+            <form action="mailto:exemple@votre-email.com" method="post" enctype="text/plain">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required rows="4"></textarea>
+
+                <button type="submit">ENVOYER</button>
+            </form>
+        </div>
+    </main>
+
+    <div class="sitemap-container">
+        <div class="sitemap-item">
+            <h3><a href="index.html">Accueil</a></h3>
+            <h3><a href="Historique.html">Historique</a></h3>
+            <h3><a href="Galerie Photos.html">Galerie</a></h3>
+        </div>
+        <div class="sitemap-item">
+            <h3><a href="Billeterie.html">Billetterie</a></h3>
+            <h3><a href="Assistance.html">Assistance</a></h3>
+            <h3><a href="Partenaires et Sponsors.html">Partenaires et Sponsors</a></h3>
+            <h3><a href="Reservation.html">Réservation d'Hôtel</a></h3>
+        </div>
+    </div>
+</body>
+</html>
