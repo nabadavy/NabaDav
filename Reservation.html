@@ -17,6 +17,10 @@
             padding: 20px;
             text-align: center;
         }
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
         .container {
             width: 90%;
             max-width: 1000px;
@@ -61,7 +65,7 @@
 
         .pres {
             background-image: url("../Images/formulaire.jpg");
-            object-fit: cover;
+            background-size: cover;
             padding: 30px;
             text-align: center;
             background-color: papayawhip;
@@ -71,13 +75,13 @@
             color: blue;
         }
         .pres p {
-            margin-right: 60px;
-            margin-left: 60px;
+            margin: 0 auto;
             font-size: 23px;
             color: black;
             letter-spacing: 1px;
             word-spacing: 1px;
-        } 
+            max-width: 800px;
+        }
         section {
             background-color: papayawhip;
             padding: 10px;
@@ -92,7 +96,7 @@
         }
         .carte__image {
             width: 100%;
-            height: 200px;
+            height: auto;
         }
         .carte__image img {
             width: 100%;
@@ -147,16 +151,16 @@
             }
             .pres p {
                 font-size: 18px;
-                margin: 0 20px; 
+                margin: 0 20px;
             }
             .carte {
                 margin: 10px 0;
             }
             h2 {
-                font-size: 32px; 
+                font-size: 32px;
             }
             button {
-                font-size: 14px; 
+                font-size: 14px;
             }
         }
 
@@ -174,6 +178,9 @@
             p {
                 font-size: 12px;
             }
+            .carte__image img {
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -185,6 +192,7 @@
 
     <section class="pres">
         <h2>Nos meilleurs Hôtels</h2>
+        <p>Découvrez nos hôtels partenaires pour une expérience inoubliable lors de votre séjour.</p>
     </section>
 
     <section>
