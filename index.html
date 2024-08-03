@@ -5,31 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
             background-color: #f4f4f4;
         }
 
-        header {
-            background-color: #0056b3;
-            color: white;
-            padding: 10px;
-            text-align: center;
+        header { 
+            background-color: #0056b3; 
+            color: rgb(255, 255, 255); 
+            padding: 20px; 
+            text-align: center; 
             position: relative;
+            margin-bottom: 20px;
         }
 
         .logo {
-            width: 100px;
+            max-width: 150px;
             height: auto;
-            position: absolute;
-            left: 20px;
-            top: 10px;
+            margin: 0 auto;
+            display: block;
         }
 
-        .header-content {
-            margin-left: 140px; /* Adjust according to the image width */
+        .banner-image {
+            width: 100%; 
+            height: auto; 
+            max-height: 300px; 
+            object-fit: cover; 
+        }
+
+        .main-content { 
+            width: 80%; 
+            max-width: 1200px; 
+            margin: auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
 
         .sitemap-container {
@@ -37,7 +50,7 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
-            background: white;
+            background: #e0e0e0;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -52,53 +65,44 @@
         }
 
         .sitemap-item a:hover {
-            text-decoration: underline;
+            color: #ffd700; 
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.5em;
-            }
-            .sitemap-container {
-                width: 90%;
+            header {
                 padding: 15px;
             }
-            .sitemap-item h3 {
-                font-size: 1.2em;
+            .main-content {
+                width: 90%;
+                padding: 15px;
             }
         }
 
         @media (max-width: 480px) {
             header {
-                font-size: 1em;
+                font-size: 1.2em;
                 padding: 10px;
             }
-            .logo {
-                width: 80px; /* Adjust for smaller screens */
-                left: 10px;  /* Adjust positioning */
-                top: 5px;
-            }
-            .header-content {
-                margin-left: 100px; /* Adjust according to the smaller image width */
-            }
-            .sitemap-container {
+            .main-content {
                 width: 95%;
                 padding: 10px;
-            }
-            .sitemap-item h3 {
-                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Logo de l'accueil" class="logo">
-        <div class="header-content">
-            <h1>Bienvenue à la Semaine Nationale de la Culture de Bobo Dioulasso</h1>
-        </div>
+        <img src="logo.jpg" alt="Image de la SNC" class="logo">
+        <h1>Bienvenue à la Semaine Nationale de la Culture de Bobo Dioulasso</h1>
     </header>
+    <div class="main-content">
+        <h2>Introduction</h2>
+        <p>Bienvenue sur notre site pour la Semaine Nationale de la Culture de Bobo Dioulasso. Nous sommes ravis de vous accueillir pour cet événement culturel unique.</p>
+    </div>
     <div class="sitemap-container">
+        <div class="sitemap-item">
+            <h3><a href="index.html">Accueil</a></h3>
+        </div>
         <div class="sitemap-item">
             <h3><a href="Historique.html">Historique</a></h3>
         </div>
