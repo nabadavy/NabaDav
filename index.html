@@ -5,76 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan du Site</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #0056b3; color: white; padding: 10px; text-align: center; }
-        .sitemap-container { width: 80%; max-width: 1200px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        .sitemap-item { margin-bottom: 20px; }
-        .sitemap-item a { color: #0056b3; text-decoration: none; }
-        .sitemap-item a:hover { text-decoration: underline; }
-         /* Media queries pour les petits écrans */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        }
+        header { 
+            background-color: #0056b3; 
+            color: white; 
+            padding: 10px; 
+            text-align: center; 
+            position: relative; 
+        }
+        .logo {
+            max-width: 150px; /* Ajustez la taille du logo selon vos besoins */
+            height: auto;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .sitemap-container { 
+            width: 80%; 
+            max-width: 1200px; 
+            margin: auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        .sitemap-item { 
+            margin-bottom: 20px; 
+        }
+        .sitemap-item a { 
+            color: #0056b3; 
+            text-decoration: none; 
+        }
+        .sitemap-item a:hover { 
+            text-decoration: underline; 
+        }
+        /* Media queries pour les petits écrans */
         @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 10px;
-            }
-            h1 {
+            header h1 {
                 font-size: 1.5em;
             }
-            p {
-                font-size: 14px;
+            .sitemap-container {
+                width: 90%;
+                padding: 15px;
+            }
+            .sitemap-item h3 {
+                font-size: 1.2em;
             }
         }
         @media (max-width: 480px) {
             header {
-                font-size: 1.2em;
-                padding: 15px;
+                font-size: 1em;
+                padding: 10px;
             }
-            .container {
-                padding: 5px;
+            .logo {
+                max-width: 120px;
             }
-            h1 {
-                font-size: 1.2em;
+            .sitemap-container {
+                width: 95%;
+                padding: 10px;
             }
-            p {
-                font-size: 12px;
+            .sitemap-item h3 {
+                font-size: 1em;
             }
         }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue A La Semaine Nationale de la Culture de Bobo Dioulasso</h1>
-        <img src ="logo.jpg" alt="logo de SNC Bobo-Dioulasso" 
-        class="logo"></img>
-    
+        <h1>Bienvenue à la Semaine Nationale de la Culture de Bobo Dioulasso</h1>
+        <img src="logo.jpg" alt="Logo de SNC Bobo-Dioulasso" class="logo">
     </header>
     <div class="sitemap-container">
-            <div class="sitemap-item">
-            <div class="sitemap-item">
-                <h3><a href="Historique.html">Historique</a></h3>
-            </div>
-
-            <div class="sitemap-item">
-                <h3><a href="Galerie Photos.html">Galerie</a></h3>
-            </div>
+        <div class="sitemap-item">
+            <h3><a href="Historique.html">Historique</a></h3>
         </div>
         <div class="sitemap-item">
-            <h3><a href="Billeterie.html">Billetterie</a></h3
-
-                <div class="sitemap-item">
-                    <h3><a href="Contacter.html">Contacter-Nous</a></h3>
-                </div>
-
-                <div class="sitemap-item">
-                    <h3><a href="Assistance.html">Assistance</a></h3>
-                </div>
-
-                <div class="sitemap-item">
-                    <h3><a href="Partenaires et Sponsors.html">Partenaires et Sponsors</a></h3>
-                </div>
-
-                <div class="sitemap-item">
-                    <h3><a href="Reservation.html">Reservation d'HOTEL/a></h3>
-                </div>
-                </html>
+            <h3><a href="Galerie Photos.html">Galerie</a></h3>
+        </div>
+        <div class="sitemap-item">
+            <h3><a href="Billetterie.html">Billetterie</a></h3>
+        </div>
+        <div class="sitemap-item">
+            <h3><a href="Contacter.html">Contacter-Nous</a></h3>
+        </div>
+        <div class="sitemap-item">
+            <h3><a href="Assistance.html">Assistance</a></h3>
+        </div>
+        <div class="sitemap-item">
+            <h3><a href="Partenaires et Sponsors.html">Partenaires et Sponsors</a></h3>
+        </div>
+        <div class="sitemap-item">
+            <h3><a href="Reservation.html">Réservation d'Hôtel</a></h3>
+        </div>
+    </div>
+</body>
+</html>
