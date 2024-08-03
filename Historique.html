@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,20 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histoire de la SNC</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;
-        background-image: url('SNC.jpg'); }
-        header { background-color: #0056b3; color: rgb(22, 7, 7); padding: 10px; text-align: center; }
-        .history-container { width: 80%; max-width: 1200px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        .history-item { margin-bottom: 20px; }
-        .history-item h3 { color: #0056b3; }
-        .history-item p { margin: 5px 0; }
-
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4;
+            background-image: url('SNC.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        header { 
+            background-color: #0056b3; 
+            color: rgb(255, 255, 255); 
+            padding: 10px; 
+            text-align: center; 
+        }
+        .banner-image {
+            width: 100%; 
+            height: auto; 
+            max-height: 300px; 
+            object-fit: cover; 
+        }
+        .history-container { 
+            width: 80%; 
+            max-width: 1200px; 
+            margin: auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        .history-item { 
+            margin-bottom: 20px; 
+        }
+        .history-item h3 { 
+            color: #0056b3; 
+        }
+        .history-item p { 
+            margin: 5px 0; 
+        }
         .sitemap-container {
             width: 80%;
             max-width: 1200px;
             margin: auto;
             padding: 20px;
-            background: rgb(20, 20, 15);
+            background: #e0e0e0;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -34,16 +63,19 @@
         .sitemap-item a:hover {
             color: #ffd700; 
         }
-         /* Media queries pour les petits écrans */
+      
         @media (max-width: 768px) {
-            .container {
+            .history-container, .sitemap-container {
                 width: 95%;
-                padding: 10px;
+                padding: 15px;
             }
-            h1 {
+            header h1 {
                 font-size: 1.5em;
             }
-            p {
+            .history-item h3 {
+                font-size: 1.2em;
+            }
+            .history-item p {
                 font-size: 14px;
             }
         }
@@ -52,31 +84,29 @@
                 font-size: 1.2em;
                 padding: 15px;
             }
-            .container {
-                padding: 5px;
+            .banner-image {
+                max-height: 200px;
             }
-            h1 {
-                font-size: 1.2em;
+            .history-item h3 {
+                font-size: 1em;
             }
-            p {
+            .history-item p {
                 font-size: 12px;
             }
         }
-
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Image" class="banner-image">
-        
-        <h1>Histoire de la SNC</h1></header>
+        <img src="logo.jpg" alt="Image de la SNC" class="banner-image">
+        <h1>Histoire de la SNC</h1>
+    </header>
     <div class="history-container">
         <div class="history-item">
             <h3>Origines et Contexte</h3>
-            <p>Porté sur les fonts baptismaux en 1983, la Semaine nationale de la culture (SNC) témoigne de la volonté de l’Etat burkinabè de placer la culture au centre des enjeux du développement. Retour sur l’histoire de cette biennale culturelle qui, en 27 ans d’existence, a révélé de nombreux talents artistiques, contribuant ainsi au rayonnement du Burkina Faso.
+            <p>Portée sur les fonts baptismaux en 1983, la Semaine nationale de la culture (SNC) témoigne de la volonté de l’Etat burkinabè de placer la culture au centre des enjeux du développement. Retour sur l’histoire de cette biennale culturelle qui, en 27 ans d’existence, a révélé de nombreux talents artistiques, contribuant ainsi au rayonnement du Burkina Faso.
 
-                Tel un bébé applaudi par le cercle de famille, la SNC est venue au monde un jour de l’année 1983, au tout début de la Révolution, au bonheur des autorités burkinabè qui ont œuvré à l’accouchement. Instituée donc au tout début de la Révolution de feu le capitaine Thomas Sankara, la manifestation qui vise essentiellement la promotion de la culture burkinabè dans toute sa diversité, fait son petit bonhomme de chemin. Dans cette dynamique, l’on se retrouve cette année 2010, à la 15e édition de la SNC qui se tient du 27 novembre au 4 décembre, sous le thème : « Culture et traditions ».
-                </p>
+                Tel un bébé applaudi par le cercle de famille, la SNC est venue au monde un jour de l’année 1983, au tout début de la Révolution, au bonheur des autorités burkinabè qui ont œuvré à l’accouchement. Instituée donc au tout début de la Révolution de feu le capitaine Thomas Sankara, la manifestation qui vise essentiellement la promotion de la culture burkinabè dans toute sa diversité, fait son petit bonhomme de chemin. Dans cette dynamique, l’on se retrouve cette année 2010, à la 15e édition de la SNC qui se tient du 27 novembre au 4 décembre, sous le thème : « Culture et traditions ».</p>
         </div>
         <div class="history-item">
             <h3>Évolution au Fil des Années</h3>
@@ -86,11 +116,9 @@
                 
                 En effet, une salle de spectacles et des infrastructures d’accueil ont été construites, sans oublier l’ouverture de routes, la construction d’un aérodrome et la création d’une radio régionale. En 1985, la SNC a connu une pause, étant donné que les autorités voulaient lui donner une nouvelle orientation. C’est en cela qu’au cours de ladite année, un séminaire national a eu lieu à Matourkou, à quelques encablures de Bobo-Dioulasso, sous la responsabilité du Secrétaire permanent (SP) de la SNC d’alors, Prosper Kompaoré. Les participants à cette rencontre s’étaient penchés sur la périodicité de la manifestation et son contenu artistique.
                 
-                Au terme des réflexions, des résolutions ont été prises. Il s’agit notamment de la tenue de la manifestation les années paires et de manière tournante, de la redéfinition des disciplines en compétition et de la recherche des stratégies de valorisation du volet festival. Du reste, c’est à la lumière de ce séminaire que la 3e édition de la SNC s’est déroulée en 1986 à Bobo-Dioulasso où elle a connu un succès avec l’« inoubliable » carnaval de plus de 500 masques.</p>
+                Au terme des réflexions, des résolutions ont été prises. Il s’agit notamment de la tenue de la manifestation les années paires et de manière tournante, de la redéfinition des disciplines en compétition et de la recherche des stratégies de valorisation du volet festival. Du reste, c’est à la lumière de ce séminaire que la 3e édition de la SNC s’est déroulée en 1986 à Bobo-Dioulasso où elle a connu un succès avec l’« inoubliable » carnaval de plus de 500 masques.</p>
         </div>
-    
     </div>
-
     <div class="sitemap-container">
         <div class="sitemap-item">
             <h3><a href="index.html">Accueil</a></h3>
@@ -99,10 +127,3 @@
         </div>
         <div class="sitemap-item">
             <h3><a href="Billeterie.html">Billetterie</a></h3>
-            <h3><a href="Assistance.html">Assistance</a></h3>
-            <h3><a href="Partenaires et Sponsors.html">Partenaires et Sponsors</a></h3>
-            <h3><a href="Reservation.html">Réservation d'Hôtel</a></h3>
-        </div>
-    </div>
-</body>
-</html>
