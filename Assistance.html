@@ -5,14 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support et Assistance - SNC Bobo-Dioulasso</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #0056b3; color: white; padding: 10px; text-align: center; }
-        .support-container { width: 80%; max-width: 1200px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        form { display: flex; flex-direction: column; }
-        label { margin: 10px 0 5px; }
-        input, textarea { padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; }
-        button { padding: 10px; background-color: #0056b3; color: white; border: none; border-radius: 4px; cursor: pointer; }
-        button:hover { background-color: #004494; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .support-container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .support-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004494;
+        }
 
         .sitemap-container {
             width: 80%;
@@ -23,54 +77,66 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .sitemap-item {
             margin-bottom: 20px;
         }
+
         .sitemap-item a {
             color: #0056b3;
             text-decoration: none;
         }
+
         .sitemap-item a:hover {
-            color: #ffd700; 
+            color: #ffd700;
         }
-         /* Media queries pour les petits écrans */
+
+        /* Media queries pour les petits écrans */
         @media (max-width: 768px) {
-            .container {
+            .support-container, .sitemap-container {
                 width: 95%;
                 padding: 10px;
             }
-            h1 {
+
+            header h1 {
                 font-size: 1.5em;
             }
-            p {
+
+            .support-container h2 {
+                font-size: 1.2em;
+            }
+
+            label, input, textarea, button {
                 font-size: 14px;
             }
         }
+
         @media (max-width: 480px) {
             header {
                 font-size: 1.2em;
                 padding: 15px;
             }
-            .container {
+
+            .support-container {
                 padding: 5px;
             }
-            h1 {
-                font-size: 1.2em;
+
+            .support-container h2 {
+                font-size: 1em;
             }
-            p {
+
+            label, input, textarea, button {
                 font-size: 12px;
             }
         }
-
     </style>
 </head>
 <body>
     <header>
-        <img src ="logo.jpg" alt="logo de SNC Bobo-Dioulasso" 
-        class="logo"></img>
-        
+        <img src="logo.jpg" alt="logo de SNC Bobo-Dioulasso" class="logo">
         <h1>Support et Assistance</h1>
     </header>
+
     <div class="support-container">
         <h2>Contactez-nous</h2>
         <p>Pour toute question ou problème, veuillez nous contacter via le formulaire ci-dessous.</p>
