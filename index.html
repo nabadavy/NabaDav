@@ -17,13 +17,28 @@
             padding: 10px; 
             text-align: center; 
             position: relative; 
-            overflow: hidden; /* Ensure the image stays within the header */
+        }
+        .header-container {
+            max-width: 1200px; 
+            margin: 0 auto; 
+            position: relative;
         }
         .header-image {
             width: 100%;
             height: auto;
             max-height: 300px; 
-            object-fit: cover; /* Ensure the image covers the header area */
+            object-fit: cover; 
+            display: block; /* Ensures the image behaves like a block element */
+        }
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
         }
         .sitemap-container { 
             width: 80%; 
@@ -45,49 +60,44 @@
             text-decoration: underline; 
         }
       
-         @media (max-width: 768px) {
-            .support-container, .sitemap-container {
-                width: 95%;
-                padding: 10px;
-            }
-
+        @media (max-width: 768px) {
             header h1 {
                 font-size: 1.5em;
             }
-
-            .support-container h2 {
-                font-size: 1.2em;
-            }
-
-            label, input, textarea, button {
-                font-size: 14px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                font-size: 1.2em;
+            .sitemap-container {
+                width: 90%;
                 padding: 15px;
             }
-
-            .support-container {
-                padding: 5px;
+            .sitemap-item h3 {
+                font-size: 1.2em;
             }
-
-            .support-container h2 {
+        }
+        @media (max-width: 480px) {
+            header {
                 font-size: 1em;
+                padding: 10px;
             }
-
-            label, input, textarea, button {
-                font-size: 12px;
+            .header-image {
+                max-height: 200px;
+            }
+            .sitemap-container {
+                width: 95%;
+                padding: 10px;
+            }
+            .sitemap-item h3 {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Image d'accueil" class="header-image">
-        <h1>Bienvenue à la Semaine Nationale de la Culture de Bobo Dioulasso</h1>
+        <div class="header-container">
+            <img src="logo.jpg" alt="Image d'accueil" class="header-image">
+            <div class="header-text">
+                <h1>Bienvenue à la Semaine Nationale de la Culture de Bobo Dioulasso</h1>
+            </div>
+        </div>
     </header>
     <div class="sitemap-container">
         <div class="sitemap-item">
