@@ -17,10 +17,10 @@
             padding: 20px;
             text-align: center;
         }
-        .header-logo {
-            max-width: 100%;
+        .logo {
+            width: 150px; /* Ajuster selon la taille souhaitée */
             height: auto;
-            max-height: 150px;
+            margin: 0 auto;
         }
         .container {
             width: 80%;
@@ -49,6 +49,8 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 16px;
+            background-color: white;
+            color: black;
         }
         button {
             background-color: #0056b3;
@@ -64,65 +66,91 @@
         }
         .pres {
             background-image: url("../Images/formulaire.jpg");
-            background-size: cover;
+            object-fit: cover;
             padding: 30px;
             text-align: center;
             background-color: papayawhip;
         }
         .pres h2 {
             font-size: 30px;
-            color: white;
+            color: blue;
         }
         .pres p {
-            margin: 0 60px;
+            margin-right: 60px;
+            margin-left: 60px;
             font-size: 23px;
-            color: black;
+            color: beige;
             letter-spacing: 1px;
             word-spacing: 1px;
+            color: black;
         }
         section {
             background-color: papayawhip;
             padding: 10px;
         }
-        .carte_image, .carte_image-sous {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .carte__image img {
+        .carte__image {
             width: 100%;
             height: 700px;
             border-radius: 0.5em;
-            object-fit: cover;
-            transition: transform 1s;
+            margin-bottom: 0.5em;
+            margin: auto;
+            padding: auto;
         }
         .carte__image-sous {
+            width: 100%;
+            height: 500px;
+            border-radius: 0.5em;
+            margin-bottom: 0.5em;
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 10px;
         }
         .carte__image-sous img {
             width: 45%;
-            height: 500px;
+            height: 100%;
             border-radius: 0.5em;
             object-fit: cover;
         }
+        .carte__image img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5em;
+            object-fit: cover;
+            transition: all 1s;
+        }
+        .hot-wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .arri {
+            text-align: center;
+            background-color: cadetblue;
+            display: inline;
+        }
         .carte {
             width: 100%;
+            height: 100px;
             background-color: rgb(254, 248, 236);
             border-radius: 1.5em;
             box-shadow: 0 0 2em rgba(0, 0, 0, 0.694);
-            padding: 20px;
-            margin-top: 100px;
-            display: flex;
-            flex-direction: column;
+            padding: auto;
+            margin: auto;
+            display: inline;
             align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+            margin-left: auto;
             margin-bottom: 19px;
         }
         .carte__image img:hover {
             transform: rotate(5deg);
         }
         .carte__content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             color: aquamarine;
         }
         .carte__content span {
@@ -134,6 +162,7 @@
             font-size: 1.5rem;
             font-weight: bold;
             color: blue;
+            margin-bottom: 0px;
             text-align: center;
         }
         .carte__texte {
@@ -145,6 +174,24 @@
             text-align: center;
             font-size: 40px;
             color: blue;
+        }
+        @media (max-width: 768px) {
+            .pres h2 {
+                font-size: 24px;
+            }
+            .pres p {
+                font-size: 18px;
+                margin: 0 20px;
+            }
+            .carte {
+                margin: 10px 0;
+            }
+            h2 {
+                font-size: 32px;
+            }
+            button {
+                font-size: 14px;
+            }
         }
         .sitemap-container {
             width: 80%;
@@ -165,19 +212,17 @@
         .sitemap-item a:hover {
             color: #ffd700;
         }
+        /* Media queries pour les petits écrans */
         @media (max-width: 768px) {
             .container {
                 width: 95%;
                 padding: 10px;
             }
-            h1, h2 {
+            h1 {
                 font-size: 1.5em;
             }
             p {
                 font-size: 14px;
-            }
-            .carte__image img {
-                height: auto;
             }
         }
         @media (max-width: 480px) {
@@ -188,21 +233,19 @@
             .container {
                 padding: 5px;
             }
-            h1, h2 {
+            h1 {
                 font-size: 1.2em;
             }
             p {
                 font-size: 12px;
-            }
-            button {
-                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="logo de SNC Bobo-Dioulasso" class="header-logo">
+        <img src="logo.jpg" alt="logo de SNC Bobo-Dioulasso" class="logo">
+        <h1>Réservation d'Hôtel</h1>
     </header>
 
     <section class="pres">
@@ -247,6 +290,7 @@
             </div>
             <div class="carte__content">
                 <span class="carte__titre">RAN Hotel Somkieta</span>
+                <p class="carte__texte"></p>
             </div>
         </div>
     </section>
@@ -271,9 +315,30 @@
 
             <label for="room-type">Type de Chambre :</label>
             <select id="room-type" name="room-type" required>
-                <option value="Pacific HOTEL">PACIFIC HOTEL</option>
-                <option value="HOTEL DIOULASSOBA">DIOULASSOBA HOTEL</option>
+                <option value="PACIFIC HOTEL">PACIFIC HOTEL</option>
+                <option value="HOTEL DIOULASSOBA">HOTEL DIOULASSOBA</option>
                 <option value="RAN HOTEL Somkieta">RAN HOTEL Somkieta</option>
             </select>
 
-            <label for="special-requests">
+            <label for="special-requests">Demandes Spéciales :</label>
+            <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </div>
+
+    <div class="sitemap-container">
+        <div class="sitemap-item">
+            <h3><a href="index.html">Accueil</a></h3>
+            <h3><a href="Historique.html">Historique</a></h3>
+            <h3><a href="Galerie Photos.html">Galerie</a></h3>
+        </div>
+        <div class="sitemap-item">
+            <h3><a href="Billeterie.html">Billetterie</a></h3>
+            <h3><a href="Assistance.html">Assistance</a></h3>
+            <h3><a href="Partenaires et Sponsors.html">Partenaires et Sponsors</a></h3>
+            <h3><a href="Contacter.html">Contacter-NOUS</a></h3>
+        </div>
+    </div>
+</body>
+</html>
