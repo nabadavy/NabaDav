@@ -11,12 +11,17 @@
             padding: 0;
             background-color: #aa9797;
             background-image: url('PATENAIRES.jpg');
-        }
+            background-size: cover; /        }
         header {
             background-color: #0056b3;
             color: rgb(23, 18, 18);
             padding: 20px;
             text-align: center;
+        }
+        .header-logo {
+            max-width: 100%;
+            height: auto; 
+            max-height: 150px;
         }
         .partners-container {
             width: 80%;
@@ -41,7 +46,7 @@
             gap: 20px;
         }
         .partner {
-            flex: 1 1 calc(33.333% - 20px); /* 3 colonnes */
+            flex: 1 1 calc(33.333% - 20px); 
             max-width: calc(33.333% - 20px);
             text-align: center;
             box-sizing: border-box;
@@ -51,7 +56,6 @@
             height: auto;
             border-radius: 8px;
         }
-
         .sitemap-container {
             width: 80%;
             max-width: 1200px;
@@ -71,11 +75,38 @@
         .sitemap-item a:hover {
             color: #ffd700; 
         }
+
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+            .partners {
+                flex-direction: column;
+                align-items: center;
+            }
+            .partner {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.2em;
+                padding: 10px;
+            }
+            .partners-container {
+                padding: 10px;
+            }
+            .partner img {
+                max-height: 100px; 
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-         <img src="logo.jpg" alt="Image" class="banner-image">
+        <img src="logo.jpg" alt="Image" class="header-logo">
         <h1>Nos Partenaires</h1>
     </header>
     <div class="partners-container">
@@ -99,17 +130,12 @@
             <div class="partner">
                 <img src="Dafani.jpg" alt="Partenaire 6">
             </div>
-            
             <div class="partner">
-                <img src="LigdiCash.jpg" alt="Partenaire 4">
+                <img src="LigdiCash.jpg" alt="Partenaire 7">
             </div>
             <div class="partner">
-                <img src="UE.jpg" alt="Partenaire 5">
+                <img src="UE.jpg" alt="Partenaire 8">
             </div>
-            <div class="partner">
-                <img src="Dafani.jpg" alt="Partenaire 6">
-            </div>
-            
         </div>
     </div>
     <div class="sitemap-container">
@@ -125,6 +151,5 @@
             <h3><a href="Reservation.html">Réservation d'Hôtel</a></h3>
         </div>
     </div>
-   
 </body>
 </html>
