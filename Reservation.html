@@ -17,16 +17,11 @@
             padding: 20px;
             text-align: center;
         }
-        .logo {
-            width: 150px; /* Ajuster selon la taille souhaitée */
-            height: auto;
-            margin: 0 auto;
-        }
         .container {
             width: 80%;
             max-width: 1000px;
             margin: 20px auto;
-            background: #151c23;
+            background:#151c23;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,7 +36,7 @@
         label {
             margin-bottom: 5px;
             font-weight: bold;
-            color: white;
+            color: #fff;
         }
         input, select, textarea {
             margin-bottom: 15px;
@@ -49,8 +44,6 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 16px;
-            background-color: white;
-            color: black;
         }
         button {
             background-color: #0056b3;
@@ -64,6 +57,7 @@
         button:hover {
             background-color: #19222b;
         }
+
         .pres {
             background-image: url("../Images/formulaire.jpg");
             object-fit: cover;
@@ -79,120 +73,54 @@
             margin-right: 60px;
             margin-left: 60px;
             font-size: 23px;
-            color: beige;
+            color: black;
             letter-spacing: 1px;
             word-spacing: 1px;
-            color: black;
-        }
+        } 
         section {
             background-color: papayawhip;
             padding: 10px;
         }
-        .carte__image {
-            width: 100%;
-            height: 700px;
-            border-radius: 0.5em;
-            margin-bottom: 0.5em;
-            margin: auto;
-            padding: auto;
-        }
-        .carte__image-sous {
-            width: 100%;
-            height: 500px;
-            border-radius: 0.5em;
-            margin-bottom: 0.5em;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .carte__image-sous img {
-            width: 45%;
-            height: 100%;
-            border-radius: 0.5em;
-            object-fit: cover;
-        }
-        .carte__image img {
-            width: 100%;
-            height: 100%;
-            border-radius: 0.5em;
-            object-fit: cover;
-            transition: all 1s;
-        }
-        .hot-wrapper {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-        .arri {
-            text-align: center;
-            background-color: cadetblue;
-            display: inline;
-        }
         .carte {
             width: 100%;
-            height: 100px;
             background-color: rgb(254, 248, 236);
             border-radius: 1.5em;
             box-shadow: 0 0 2em rgba(0, 0, 0, 0.694);
-            padding: auto;
-            margin: auto;
-            display: inline;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 100px;
-            margin-left: auto;
-            margin-bottom: 19px;
+            margin-bottom: 20px;
+        }
+        .carte__image {
+            width: 100%;
+            height: 400px;
+            border-radius: 0.5em;
+            overflow: hidden;
+        }
+        .carte__image img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5em;
+            transition: all 1s;
         }
         .carte__image img:hover {
             transform: rotate(5deg);
         }
         .carte__content {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            color: aquamarine;
-        }
-        .carte__content span {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: xx-large;
-            color: azure;
+            padding: 20px;
+            text-align: center;
         }
         .carte__titre {
             font-size: 1.5rem;
             font-weight: bold;
             color: blue;
-            margin-bottom: 0px;
-            text-align: center;
         }
         .carte__texte {
-            text-align: center;
             font-size: 1.08rem;
-            margin-top: 4px;
         }
         section h2 {
             text-align: center;
             font-size: 40px;
             color: blue;
         }
-        @media (max-width: 768px) {
-            .pres h2 {
-                font-size: 24px;
-            }
-            .pres p {
-                font-size: 18px;
-                margin: 0 20px;
-            }
-            .carte {
-                margin: 10px 0;
-            }
-            h2 {
-                font-size: 32px;
-            }
-            button {
-                font-size: 14px;
-            }
-        }
+
         .sitemap-container {
             width: 80%;
             max-width: 1200px;
@@ -212,19 +140,26 @@
         .sitemap-item a:hover {
             color: #ffd700;
         }
-        /* Media queries pour les petits écrans */
+
         @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 10px;
+            .pres h2 {
+                font-size: 24px;
             }
-            h1 {
-                font-size: 1.5em;
+            .pres p {
+                font-size: 18px;
+                margin: 0 20px; 
             }
-            p {
-                font-size: 14px;
+            .carte {
+                margin: 10px 0;
+            }
+            h2 {
+                font-size: 32px; 
+            }
+            button {
+                font-size: 14px; 
             }
         }
+
         @media (max-width: 480px) {
             header {
                 font-size: 1.2em;
@@ -252,15 +187,10 @@
         <h2>Nos meilleurs Hôtels</h2>
     </section>
 
-    <section class="arri">
-        <h2>Hôtels</h2>
+    <section>
         <div class="carte">
             <div class="carte__image">
                 <img src="PACIFIC.jpg" alt="PACIFIC HOTEL">
-            </div>
-            <div class="carte__image-sous">
-                <img src="PA.jpg" alt="PA">
-                <img src="PAA.jpg" alt="PAA">
             </div>
             <div class="carte__content">
                 <span class="carte__titre">PACIFIC HOTEL</span>
@@ -271,10 +201,6 @@
             <div class="carte__image">
                 <img src="DIOULASSOBA.jpg" alt="Hôtel DIOULASSOBA">
             </div>
-            <div class="carte__image-sous">
-                <img src="dio.jpg" alt="dio">
-                <img src="DIOU.jpg" alt="DIOU">
-            </div>
             <div class="carte__content">
                 <span class="carte__titre">Hôtel DIOULASSOBA</span>
             </div>
@@ -284,13 +210,8 @@
             <div class="carte__image">
                 <img src="ra.jpg" alt="RAN Hotel Somkieta">
             </div>
-            <div class="carte__image-sous">
-                <img src="RAN.jpg" alt="RAN">
-                <img src="SOM.jpg" alt="SOM">
-            </div>
             <div class="carte__content">
                 <span class="carte__titre">RAN Hotel Somkieta</span>
-                <p class="carte__texte"></p>
             </div>
         </div>
     </section>
