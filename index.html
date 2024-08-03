@@ -45,32 +45,41 @@
             text-decoration: underline; 
         }
       
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.5em;
-            }
-            .sitemap-container {
-                width: 90%;
-                padding: 15px;
-            }
-            .sitemap-item h3 {
-                font-size: 1.2em;
-            }
-        }
-        @media (max-width: 480px) {
-            header {
-                font-size: 1em;
-                padding: 10px;
-            }
-            .header-image {
-                max-height: 200px;
-            }
-            .sitemap-container {
+         @media (max-width: 768px) {
+            .support-container, .sitemap-container {
                 width: 95%;
                 padding: 10px;
             }
-            .sitemap-item h3 {
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .support-container h2 {
+                font-size: 1.2em;
+            }
+
+            label, input, textarea, button {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.2em;
+                padding: 15px;
+            }
+
+            .support-container {
+                padding: 5px;
+            }
+
+            .support-container h2 {
                 font-size: 1em;
+            }
+
+            label, input, textarea, button {
+                font-size: 12px;
             }
         }
     </style>
