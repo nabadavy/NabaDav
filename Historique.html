@@ -69,34 +69,29 @@
             color: #ffd700; 
         }
       
-        @media (max-width: 768px) {
-            .history-container, .sitemap-container {
-                width: 95%;
+       @media (max-width: 768px) {
+            header {
                 padding: 15px;
             }
-            header h1 {
-                font-size: 1.5em;
+            .partners {
+                flex-direction: column;
+                align-items: center;
             }
-            .history-item h3 {
-                font-size: 1.2em;
-            }
-            .history-item p {
-                font-size: 14px;
+            .partner {
+                max-width: 100%;
+                margin-bottom: 20px;
             }
         }
         @media (max-width: 480px) {
             header {
                 font-size: 1.2em;
-                padding: 15px;
+                padding: 10px;
             }
-            .banner-image {
-                max-height: 200px;
+            .partners-container {
+                padding: 10px;
             }
-            .history-item h3 {
-                font-size: 1em;
-            }
-            .history-item p {
-                font-size: 12px;
+            .partner img {
+                max-height: 100px; 
             }
         }
     </style>
